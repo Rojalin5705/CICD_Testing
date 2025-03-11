@@ -18,7 +18,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -r Eequirement.txt
+          pip install -r Requirement.txt
           python IRIS_Code_Train_Model.py
 
           echo "RF and LR Model Score" >report.md
